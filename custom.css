@@ -1,0 +1,146 @@
+/* Fuentes de Google Fonts */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333; /* Color de texto general */
+}
+
+h1, h2, h3, h4, h5, h6, .display-3, .display-4, .display-5 {
+    font-family: 'Playfair Display', serif;
+    color: #222; /* Color para títulos */
+}
+
+/* Colores personalizados para Bootstrap */
+:root {
+    --bs-primary: #a0522d; /* Un tono de marrón/terracota para el color principal */
+    --bs-secondary: #6c757d; /* Gris por defecto de Bootstrap */
+    --bs-light: #f8f9fa;
+    --bs-dark: #343a40;
+    --bs-warning: #ffc107; /* Amarillo para las estrellas */
+}
+
+.text-primary { color: var(--bs-primary) !important; }
+.bg-primary { background-color: var(--bs-primary) !important; }
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #8b4513; /* Un tono más oscuro al pasar el ratón */
+    border-color: #8b4513;
+}
+.btn-outline-primary {
+    color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    transition: all 0.3s ease;
+}
+.btn-outline-primary:hover {
+    background-color: var(--bs-primary);
+    color: #fff;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-size: 1.8rem;
+}
+.nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: var(--bs-primary) !important;
+}
+.nav-link.active {
+    color: var(--bs-primary) !important;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #333; /* Fallback color */
+}
+.hero img {
+    filter: brightness(0.7); /* Oscurecer la imagen de fondo */
+}
+
+/* Secciones generales */
+section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/* Iconos de Servicio */
+.service-icon i {
+    color: var(--bs-primary);
+    font-size: 3.5rem; /* Ajustar tamaño de icono */
+    transition: transform 0.3s ease;
+}
+
+.service-card-hover:hover .service-icon i {
+    transform: scale(1.1);
+}
+
+/* Galería */
+.gallery-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+.gallery-card img {
+    transition: transform 0.5s ease;
+}
+.gallery-card:hover img {
+    transform: scale(1.05);
+}
+.card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.4); /* Overlay inicial */
+    transition: background-color 0.3s ease;
+}
+.gallery-card:hover .card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* Oscurecer al pasar el ratón */
+}
+.card-img-overlay h5, .card-img-overlay p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.gallery-card:hover .card-img-overlay h5,
+.gallery-card:hover .card-img-overlay p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Testimonios */
+.testimonial-card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testimonial-card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.stars i {
+    font-size: 1.2rem;
+}
+
+/* Contacto */
+.contact-info .d-flex i {
+    min-width: 40px; /* Asegura que los iconos tengan un espacio consistente */
+}
+
+/* Footer */
+.footer .list-unstyled a {
+    color: var(--bs-gray-600); /* Color de texto para enlaces del footer */
+}
+.footer .list-unstyled a:hover {
+    color: var(--bs-primary) !important;
+}
+.footer .social-links a {
+    transition: color 0.3s ease;
+}
+.footer .social-links a:hover {
+    color: var(--bs-primary) !important;
+}
+
+/* Animaciones (opcional, requiere Animate.css si no está ya en el proyecto) */
+/* Si quieres usar animaciones como las del hero, necesitarías incluir Animate.css */
+/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> */
